@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Hotel Room Booking</h1>
+    </div>
+    <hr>
+    <br><br>
+    
+    <form action="#" method="post" style="text-align: center;">
+        
+        <div>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <br><br>
+        
+        <div> 
+            <label for="email">Email:</label> 
+            <input type="email" id="email" name="email" required>
+        </div>
+        <br><br>
+
+        <div> 
+            <label for="phone">Phone:</label> 
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <br><br>
+        
+        <div> 
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <br><br>
+        
+        <div> 
+            <label for="checkin">Check-in-Date:</label>
+            <input type="date" id="checkin" name="checkin_date" required>
+        </div>    
+        <br><br>
+        
+        <div> 
+            <label for="checkout">Check-out-Date:</label>
+            <input type="date" id="checkout" name="checkout_date" required>
+        </div>    
+        <br><br>  
+        
+        <div>
+            <label for="room-type">Choose a Room Type:</label>
+            <select id="room-type" name="room_type" required>
+                <option value="">--Please select an option--</option>
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="suite">Luxury Suite</option>
+            </select>
+        </div>
+        <br><br>
+        
+        <div>
+            <label for="guest-count">Number of Guests:</label>
+            <input type="number" id="guest-count" name="number_of_guests" min="1" max="10" value="1" required>
+        </div>
+        <br><br>
+
+        <div>
+            <label for="special-requests">Special Requests (Optional):</label><br>
+            <textarea id="special-requests" name="special_requests" rows="3" placeholder="Enter requests here..."></textarea>
+        </div>
+        <br><br>
+        
+        <button type="submit">Submit</button>
+
+    </form> <!-- The form must be closed here -->
+
+</body>
+</html>
